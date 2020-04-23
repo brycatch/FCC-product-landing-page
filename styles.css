@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+:root {
+    --primary-color: #dd4ffc;
+    --font-color: #130f40;
+    --icon-color: #1d46f5;
+    --gray-color: #f5f5ff;
+}
+
+* {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-width: 1140px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo nav shop-now";
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+
+header #header-img {
+    grid-area: logo;
+}
+
+header nav {
+    grid-area: nav;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0px 18px;
+}
+
+header .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+header .nav-link:hover {
+    color: var(--primary-color);
+}
+
+header .active {
+    color: var(--primary-color);
+}
+
+header .shop-now {
+    grid-area: shop-now;
+    padding: 8px 25px;
+    background-image: linear-gradient(-30deg, #6058f9 0%, #dd4ffc 100%);
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+    background-size: 100% auto;
+}
+
+header .shop-now:hover {
+    background-size: 160% auto;
+}
+
+header .shop-now i {
+    font-size: 12px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.watch-img {
+    max-width: 300px;
+    height: auto;
+}
+
+main .presentation {
+    height: 100vh;
+    background: url('./assets/img/banner-1.png');
+    background-size: cover;
+    color: white;
+}
+
+.presentation .presentation-info {
+    height: 100vh;
+}
+
+.presentation .presentation-image, .presentation .presentation-content {
+    display: flex;
+    justify-content: center;
+}
+
+.presentation .presentation-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.presentation .presentation-content h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+
+.presentation .presentation-content p {
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.presentation .shop-now {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    width: 90px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    background-size: 100% auto;
+    transition: 0.5s;
+    background-image: linear-gradient(-90deg, #1d46f5 0%, #6809dc 100%);
+    background-size: 100% auto;
+}
+
+.presentation .shop-now:hover {
+    background-size: 200% auto;
+}
+
+.about-the-watch {
+    margin-top: 100px;
+    padding: 0 35px;
+}
+
+.about-the-watch .about-img {
+    margin: 0 auto;
+}
+
+.about-the-watch .about-info {
+    display: flex;
+    flex-direction: column;
+    padding-right: 35px;
+}
+
+.about-the-watch .about-info h2, .features h2, .latest-products-info h2 {
+    background: -webkit-linear-gradient(-90deg, rgb(9, 133, 249) 0%, rgb(104, 9, 220) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-the-watch .about-info h3 {
+    color: var(--font-color);
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.about-the-watch .about-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.about-the-watch .about-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit i {
+    color: var(--icon-color);
+    margin-bottom: 10px;
+}
+
+.features {
+    padding: 50px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    background: url('./assets/img/bg-1.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features .features-info {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.features .features-info h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.features .features-info h3 {
+    font-size: 30px;
+}
+
+.features-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 80px;
+}
+
+.features .features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.features .feature {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid var(--icon-color);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.feature-icon {
+    padding: 20px;
+}
+
+.feature-icon .icon-element {
+    background-color: var(--gray-color);
+    box-shadow: 0 0 10px rgba(29, 70, 245, 0.8);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon .icon-element i {
+    font-size: 25px;
+    color: var(--icon-color);
+}
+
+.feature-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-element h4 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.feature-element p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.latest-products {
+    margin-bottom: 60px;
+}
+
+.latest-products-info {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.latest-products-info h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.latest-products-info h3 {
+    font-size: 30px;
+}
+
+.latest-products-info p {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 80px;
+    max-width: 400px;
+}
+
+.latest-products .products {
+    display: grid;
+    padding: 0 20px;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #f1f1f1;
+}
+
+.product-img {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.product-img img {
+    width: 80%;
+    text-align: center;
+}
+
+.product h4 {
+    color: var(--icon-color);
+    margin: 10px 0;
+}
+
+.product .product-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.product .product-price .last-product {
+    text-decoration: line-through;
+}
+
+.product .product-button {
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid var(--icon-color);
+    border-radius: 20px;
+    color: var(--icon-color);
+}
+
+.product-info-button {
+    margin-bottom: 20px;
+}
+
+.newsletter {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    height: 120px;
+    background-image: url('./assets/img/banner-4.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.newsletter #email {
+    padding: 10px 20px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.newsletter input[type="submit"] {
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    right: 45px;
+    color: white;
+    background-color: #130f40;
+}
+
+.video {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.video iframe {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    header {
+        grid-template-areas: "logo . shop-now" "nav nav nav";
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 50px;
+    }
+    .presentation .presentation-content {
+        text-align: center;
+    }
+    .watch-img {
+        max-width: 200px;
+        height: auto;
+    }
+    .about-the-watch .about-info {
+        padding: 0;
+        text-align: center;
+    }
+    .about-the-watch .about-benefits, .features .features-container, .latest-products .products {
+        grid-template-columns: 1fr;
+    }
+    .product-img img {
+        max-width: 300px;
+    }
+    .newsletter {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 417px) {
+    header .shop-now {
+        display: none;
+    }
+}
